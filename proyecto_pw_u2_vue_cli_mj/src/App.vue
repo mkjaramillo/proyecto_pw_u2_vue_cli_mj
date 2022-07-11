@@ -4,16 +4,23 @@
 
  <!-- <HelloWorld msg="Bienvenido" />-->
  <Contador/>
+ <br>
+ <div>
+    <Calculadora></Calculadora>
+ </div>
+ 
  </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
-import Contador from"./components/Contador.vue"
+import Contador from"./components/Contador.vue";
+import Calculadora from"./components/Calculadora.vue";
 export default {
   name: "App",
   components: {
-    Contador
+    Contador,
+    Calculadora
   },
 };
 </script>
