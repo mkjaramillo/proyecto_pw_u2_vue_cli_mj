@@ -2,7 +2,7 @@
 <div>
 
 
-  <h2>Contador</h2>
+  <h2> {{muestraTitulo}}</h2>
   <p>{{ numero }} <sup>2</sup>= {{ obtenerCuadradoComputado }}</p>
   <p>{{ numero }} <sup>2</sup>= {{ obtenerCuadradoComputado }}</p>
   <p>{{ numero }} <sup>2</sup>= {{ obtenerCuadradoComputado }}</p>
@@ -18,9 +18,10 @@
 <script>
 export default {
   name: "Contador123",
+  props:['titulo','inicio'],
   data() {
     return {
-      numero: 5,
+      numero: this.inicio,
     };
   },
   methods: {
@@ -41,11 +42,14 @@ export default {
 
       return this.numero * this.numero;
     },
+    muestraTitulo(){
+     return this.titulo||'Titulo vacio2'
+    }
   },
 };
 </script>
 
-<style>
+<style scoped>
 button{
     background-color: lightgreen;
     border-radius: 5px;

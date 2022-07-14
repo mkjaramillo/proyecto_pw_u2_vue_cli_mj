@@ -3,7 +3,11 @@
   <img alt="Vue logo" src="./assets/logo.png" />
 
  <!-- <HelloWorld msg="Bienvenido" />-->
- <Contador/>
+ <Contador2 titulo="Titulo 1"  v-bind:inicio="valorInicio"/>
+ <Contador2 titulo="Titulo 2" v-bind:inicio="-1" />
+<DatosBasicos v-bind:nombre="tipo" v-bind:apellido="tipo" v-bind:correo="tipo"/>
+<DatosBasicos v-bind:nombre="tipo2" v-bind:apellido="tipo2" v-bind:correo="tipo2"/>
+ 
  <br>
  <div>
     <Calculadora></Calculadora>
@@ -16,11 +20,22 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import Contador from"./components/Contador.vue";
 import Calculadora from"./components/Calculadora.vue";
+import Contador2 from "./components/Contador2.vue";
+import DatosBasicos from"./components/DatosBasicos.vue"
 export default {
   name: "App",
+  data() {
+    return {
+      valorInicio:27,
+      tipo:'Estudiante',
+      tipo2:'Profesor'
+    };
+  },
   components: {
     Contador,
-    Calculadora
+    Calculadora,
+    Contador2,
+    DatosBasicos
   },
 };
 </script>
