@@ -21,7 +21,7 @@ props:{
 }
 </script>
 
-<style>
+<style scoped>
 label{
     display: block;
 }

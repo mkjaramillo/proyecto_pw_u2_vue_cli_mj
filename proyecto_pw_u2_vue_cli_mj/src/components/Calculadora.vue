@@ -80,7 +80,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 table{
     margin:auto;
     background: linear-gradient(to bottom, white, rgb(208, 167, 231));
