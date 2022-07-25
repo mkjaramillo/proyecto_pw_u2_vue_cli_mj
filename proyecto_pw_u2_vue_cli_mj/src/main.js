@@ -1,4 +1,4 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import IpPublica from './components/IpPublica.vue'
 import'./css/style.css'
-createApp(App).mount('#app')
+createApp(IpPublica).mount('#app')

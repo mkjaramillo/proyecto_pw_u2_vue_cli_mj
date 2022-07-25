@@ -1,16 +1,18 @@
 <template>
 <div>
-<Pregunta/>
+<ip-publica-vue></ip-publica-vue>
  </div>
 </template>
 
 <script>
 import Pregunta from "./components/Pregunta.vue"
+import IpPublicaVue from "./components/IpPublica.vue";
 export default {
   name: "App",
   
   components: {
-   Pregunta
+   Pregunta,
+   IpPublicaVue
   },
 };
 </script>
